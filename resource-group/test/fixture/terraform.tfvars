@@ -1,1 +1,1 @@
-name = "rg-pyterra"
+name = "tftest-rg"

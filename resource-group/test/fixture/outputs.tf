@@ -1,3 +1,3 @@
 output "resource-group" {
-  value = module.rg-pyterra.resource_group
+  value = module.tftest-rg.resource_group
 }
