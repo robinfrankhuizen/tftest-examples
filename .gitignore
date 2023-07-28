@@ -1,0 +1,11 @@
+# Pycharm stuff
+.idea/
+
+# Python stuff
+.venv/
+**/.pytest_cache/
+**/__pycache__/
+
+# Terraform stuff
+**/.terraform.lock.hcl
+**/terraform.tfstate.*
