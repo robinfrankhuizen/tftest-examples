@@ -10,9 +10,9 @@ on:
         type: string
         required: true
 
-#defaults:
-#  run:
-#    working-directory: ${{ inputs.module }} # The working directory path
+defaults:
+  run:
+    working-directory: ${{ inputs.module }} # The working directory path
 
 jobs:
   static_analysis:
@@ -24,7 +24,7 @@ jobs:
     - name: Black
       uses: psf/black@stable
       with:
-        - src: ${{ inputs.module }}
+        src: ${{ inputs.module }}
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v2
       with:
