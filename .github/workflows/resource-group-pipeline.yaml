@@ -1,9 +1,8 @@
-name: Module test
+name: Module Resource Group
 
-on: [push]
-#  push:
-#    paths:
-#      - resource-group/**
+  push:
+    paths:
+      - resource-group/**
 
 jobs:
   static_analysis:
