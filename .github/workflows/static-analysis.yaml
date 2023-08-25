@@ -12,6 +12,8 @@ on:
 
 jobs:
   static_analysis:
+    runs-on: ubuntu-latest
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
