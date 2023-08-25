@@ -1,1 +1,1 @@
-name = "tftest-rg"
+name = "rg-tftest"
