@@ -8,19 +8,19 @@ on:
       terraform_version:
         required: true
 
-runs:
-  using: "composite"
-  steps:
-  - name: Checkout repository
-    uses: actions/checkout@v3
-  - name: Go to module root
-    run: cd ${{ inputs.module }}
-  - name: Black
-    uses: psf/black@stable
-  - name: Setup Terraform
-    uses: hashicorp/setup-terraform@v2
-    with:
-      terraform_version: ${{ inputs.terraform_version }}
-  - name: Terraform Format
-    id: fmt
-    run: terraform fmt -check
+jobs:
+  static_analysis:
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    - name: Go to module root
+      run: cd ${{ inputs.module }}
+    - name: Black
+      uses: psf/black@stable
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v2
+      with:
+        terraform_version: ${{ inputs.terraform_version }}
+    - name: Terraform Format
+      id: fmt
+      run: terraform fmt -check
