@@ -5,7 +5,7 @@ on:
 
 jobs:
   static_analysis:
-    uses: "./.github/templates/static-analysis.yaml"
+    uses: "./.github/workflows/static-analysis.yaml"
     with:
       module: resource-group
       terraform_version: 1.3.6
