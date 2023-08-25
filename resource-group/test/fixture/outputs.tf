@@ -1,3 +1,3 @@
-output "resource-group" {
-  value = module.tftest-rg.resource_group
+output "resource_group" {
+  value = module.rg-tftest.resource_group
 }
