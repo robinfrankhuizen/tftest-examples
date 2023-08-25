@@ -4,8 +4,10 @@ on:
   workflow_call:
     inputs:
       module:
+        type: string
         required: true
       terraform_version:
+        type: string
         required: true
 
 jobs:
