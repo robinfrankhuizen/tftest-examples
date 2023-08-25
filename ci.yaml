@@ -1,0 +1,9 @@
+name: Module test
+on: [push]
+
+jobs:
+  static_analysis:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Run ci"
