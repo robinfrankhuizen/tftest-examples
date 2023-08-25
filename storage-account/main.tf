@@ -17,3 +17,4 @@ resource "azurerm_role_assignment" "this" {
   principal_id         = "e8a5724c-7603-42e0-91f0-c843e5c3c17e"
   scope                = azurerm_storage_account.this.id
 }
+
