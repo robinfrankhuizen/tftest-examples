@@ -1,7 +1,8 @@
 name: Module test
 on:
   push:
-    - "resource-group/"
+    paths:
+      - "resource-group/"
 
 jobs:
   static_analysis:
