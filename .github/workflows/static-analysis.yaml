@@ -10,9 +10,9 @@ on:
         type: string
         required: true
 
-defaults:
-  run:
-    working-directory: ${{ inputs.module }} # The working directory path
+#defaults:
+#  run:
+#    working-directory: ${{ inputs.module }} # The working directory path
 
 jobs:
   static_analysis:
