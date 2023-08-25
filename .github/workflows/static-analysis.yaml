@@ -1,10 +1,12 @@
 name: Static Analysis
 
-inputs:
-  module:
-    required: true
-  terraform_version:
-    required: true
+on:
+  workflow_call:
+    inputs:
+      module:
+        required: true
+      terraform_version:
+        required: true
 
 runs:
   using: "composite"
