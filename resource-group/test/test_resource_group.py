@@ -39,6 +39,6 @@ def test_plan_outputs(plan):
 
 def test_apply_outputs(apply):
     name = apply["resource_group"]["name"]
-    assert name == "rg-tftest"
+    assert name     == "rg-tftest"
     location = apply["resource_group"]["location"]
     assert location in ["westeurope", "northeurope"]

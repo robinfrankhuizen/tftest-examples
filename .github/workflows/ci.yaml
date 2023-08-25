@@ -6,4 +6,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo "Run ci"
+      - uses: actions/checkout@v3
+      - uses: psf/black@stable
