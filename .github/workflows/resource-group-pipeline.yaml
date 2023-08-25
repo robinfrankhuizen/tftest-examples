@@ -5,11 +5,7 @@ on:
 
 jobs:
   static_analysis:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Static Analysis
-        uses: "./.github/templates/static-analysis.yaml"
-        with:
-          module: resource-group
-          terraform_version: 1.3.6
+  uses: "./.github/templates/static-analysis.yaml"
+  with:
+    module: resource-group
+    terraform_version: 1.3.6
