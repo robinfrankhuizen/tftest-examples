@@ -1,0 +1,13 @@
+name: Module Storage Account
+
+on:
+  push:
+    paths:
+      - storage-account/**
+
+jobs:
+  static_analysis:
+    uses: ./.github/workflows/static-analysis.yaml
+    with:
+      module: storage-account
+      terraform_version: 1.3.6
