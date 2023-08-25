@@ -1,5 +1,6 @@
 name: Module Resource Group
 
+on:
   push:
     paths:
       - resource-group/**
