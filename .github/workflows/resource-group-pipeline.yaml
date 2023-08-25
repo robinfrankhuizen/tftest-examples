@@ -1,9 +1,9 @@
 name: Module test
 
-on:
-  push:
-    paths:
-      - resource-group/**
+on: [push]
+#  push:
+#    paths:
+#      - resource-group/**
 
 jobs:
   static_analysis:
